@@ -1,9 +1,12 @@
 /*
-if (l, s) will be superior iff a[i] >=  max(a[(i + ks)mod n] ]) for all l <= i <= l + s - 1, where k can take value from 0 to infinity.
-Therefore a[i] must be maximum among all a[(i + ks)mod n]
-Group numbers, into lists, such that, a[i] and a[j] are in same list iff j - i = ks mod n
-Now we do not need to check answers for all s, but just the factors of n
-As if the  lists for s will be same as for gcd(s, n)
+    if (l, s) will be superior iff a[i] >=  max(a[(i + ks)mod n] ]) for all l <= i <= l + s - 1, where k can take value from 0 to infinity.
+    Therefore a[i] must be maximum among all a[(i + ks)mod n]
+    Group numbers, into lists, such that, a[i] and a[j] are in same list iff j - i = ks mod n
+    Now we do not need to check answers for all s, but just the factors of n
+    As if the  lists for s will be same as for gcd(s, n)
+    
+    Time complexity = O(n * d(n)) = (n^4/3)
+    d(n) = number of divisors of n
 */
 
 #include <bits/stdc++.h>
