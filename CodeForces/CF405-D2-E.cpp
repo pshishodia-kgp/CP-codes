@@ -1,6 +1,6 @@
 /*
 Idea same as scott wu's comment, if m is even answer always exists which can be constructed by directig edgs such that indegree of each vertex is even, which is pretty standard
-
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
